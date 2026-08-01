@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
+[RequireComponent(typeof(PlayerInput))]
 public class PlayerMovement : MonoBehaviour
 {
     // ================================================================
@@ -53,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     CapsuleCollider2D col;
+    InputAction runAction;
 
     // ── Estado ──────────────────────────────────────────────────────
     bool isGrounded;
@@ -87,12 +89,19 @@ public class PlayerMovement : MonoBehaviour
         originalColliderSize = col.size;
         originalColliderOffset = col.offset;
 
+        runAction = GetComponent<PlayerInput>().actions["Run"];
+
         InputSystem.settings.backgroundBehavior =
         InputSettings.BackgroundBehavior.IgnoreFocus;
     }
 
     void Update()
     {
+        // Se lee el estado actual de la acción en vez de fiarse solo del
+        // callback OnRun, ya que el evento de soltar (canceled) no llega
+        // de forma confiable con "Send Messages" para esta acción.
+        runHeld = runAction.IsPressed();
+
         UpdateTimers();
         HandleJumpInput();
         HandleCrouch();
@@ -134,11 +143,6 @@ public class PlayerMovement : MonoBehaviour
             jumpBufferTimer = jumpBufferTime;
         else if (rb.linearVelocity.y > 0f)
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
-    }
-
-    void OnRun(InputValue value)
-    {
-        runHeld = value.isPressed;
     }
 
     void OnCrouch(InputValue value)
