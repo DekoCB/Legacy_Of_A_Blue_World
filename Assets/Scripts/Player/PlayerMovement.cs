@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         col = GetComponent<CapsuleCollider2D>();
 
         originalColliderSize = col.size;
@@ -156,12 +156,16 @@ public class PlayerMovement : MonoBehaviour
 
     void CheckGround()
     {
+        bool wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundMask);
 
         if (isGrounded)
         {
             coyoteTimer = coyoteTime;
             doubleJumpAvailable = true;
+
+            if (!wasGrounded && anim != null)
+                anim.SetTrigger("Land");
         }
     }
 
@@ -193,6 +197,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, doubleJumpForce);
             doubleJumpAvailable = false;
+            if (anim != null) anim.SetTrigger("DoubleJump");
             jumpBufferTimer = 0f;
         }
     }
