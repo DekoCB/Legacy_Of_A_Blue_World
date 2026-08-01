@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     bool runHeld;
     bool crouchHeld;
+    bool jumpHeld;
 
     // ================================================================
     //  UNITY LIFECYCLE
@@ -127,7 +128,9 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (value.isPressed)
+        jumpHeld = value.isPressed;
+
+        if (jumpHeld)
             jumpBufferTimer = jumpBufferTime;
         else if (rb.linearVelocity.y > 0f)
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
@@ -199,7 +202,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded) return;
 
         bool falling = rb.linearVelocity.y < 0f;
-        bool jumpReleased = rb.linearVelocity.y > 0f && jumpBufferTimer <= 0f;
+        bool jumpReleased = rb.linearVelocity.y > 0f && !jumpHeld;
 
         if (falling || jumpReleased)
             rb.linearVelocity += Vector2.up * (Physics2D.gravity.y * (fallGravityMult - 1f) * Time.fixedDeltaTime);
