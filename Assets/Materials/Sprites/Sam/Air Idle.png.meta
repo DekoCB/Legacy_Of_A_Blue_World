@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 8ae20ae3491fef54193082e2138b472b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7865236681148184983
+    second: Air Idle_0
+  - first:
+      213: -5821811590654218315
+    second: Air Idle_1
+  - first:
+      213: 6075320257865093329
+    second: Air Idle_2
+  - first:
+      213: 4885425499278178270
+    second: Air Idle_3
+  - first:
+      213: 528731232492980789
+    second: Air Idle_4
+  - first:
+      213: -364262193985660023
+    second: Air Idle_5
+  - first:
+      213: -2925601077506666629
+    second: Air Idle_6
+  - first:
+      213: 1269058528950404696
+    second: Air Idle_7
+  - first:
+      213: -8377579995535774219
+    second: Air Idle_8
+  - first:
+      213: -2110890971068702104
+    second: Air Idle_9
+  - first:
+      213: 9186339267553852670
+    second: Air Idle_10
+  - first:
+      213: -2948542985169470854
+    second: Air Idle_11
+  - first:
+      213: -7137212159960673097
+    second: Air Idle_12
+  - first:
+      213: 8168176847634810069
+    second: Air Idle_13
+  - first:
+      213: -4591727338991062416
+    second: Air Idle_14
+  - first:
+      213: 8721563848525751100
+    second: Air Idle_15
+  - first:
+      213: -5673213252020802894
+    second: Air Idle_16
+  - first:
+      213: -5143112598468155797
+    second: Air Idle_17
+  - first:
+      213: -6935207436884201772
+    second: Air Idle_18
+  - first:
+      213: -2716173372930988685
+    second: Air Idle_19
+  - first:
+      213: 1469098927571382827
+    second: Air Idle_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Idle_0
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1921
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9664ac909e019d290800000000000000
+      internalID: -7865236681148184983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1921
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfadcd1435c43fa0800000000000000
+      internalID: -5821811590654218315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_2
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1921
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d098ca069fdf4450800000000000000
+      internalID: 6075320257865093329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1921
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed77c158b948cc340800000000000000
+      internalID: 4885425499278178270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1921
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a066e214e665700800000000000000
+      internalID: 528731232492980789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1921
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b516ae671e1faf0800000000000000
+      internalID: -364262193985660023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1921
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f07bc025d2667d0800000000000000
+      internalID: -2925601077506666629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1921
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856c441220a9c9110800000000000000
+      internalID: 1269058528950404696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_8
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1665
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdeba0616bdcbb80800000000000000
+      internalID: -8377579995535774219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_9
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1665
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862eed588db94b2e0800000000000000
+      internalID: -2110890971068702104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1665
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcf4cc74ee6c7f70800000000000000
+      internalID: 9186339267553852670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_11
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1665
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7af00ce6cba417d0800000000000000
+      internalID: -2948542985169470854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_12
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1665
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b412f6ea5783fc90800000000000000
+      internalID: -7137212159960673097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1665
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4c7d9e0913b5170800000000000000
+      internalID: 8168176847634810069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1665
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072fcfd2058e640c0800000000000000
+      internalID: -4591727338991062416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1665
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3324458c18390970800000000000000
+      internalID: 8721563848525751100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1409
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bae242fa92b441b0800000000000000
+      internalID: -5673213252020802894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_17
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1409
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b662870575eff98b0800000000000000
+      internalID: -5143112598468155797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_18
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1409
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4deaed8949131cf90800000000000000
+      internalID: -6935207436884201772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_19
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1409
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375e21e45b63e4ad0800000000000000
+      internalID: -2716173372930988685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1409
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22bcc5e0b9436410800000000000000
+      internalID: 1469098927571382827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Air Idle_0: -7865236681148184983
+      Air Idle_1: -5821811590654218315
+      Air Idle_10: 9186339267553852670
+      Air Idle_11: -2948542985169470854
+      Air Idle_12: -7137212159960673097
+      Air Idle_13: 8168176847634810069
+      Air Idle_14: -4591727338991062416
+      Air Idle_15: 8721563848525751100
+      Air Idle_16: -5673213252020802894
+      Air Idle_17: -5143112598468155797
+      Air Idle_18: -6935207436884201772
+      Air Idle_19: -2716173372930988685
+      Air Idle_2: 6075320257865093329
+      Air Idle_20: 1469098927571382827
+      Air Idle_3: 4885425499278178270
+      Air Idle_4: 528731232492980789
+      Air Idle_5: -364262193985660023
+      Air Idle_6: -2925601077506666629
+      Air Idle_7: 1269058528950404696
+      Air Idle_8: -8377579995535774219
+      Air Idle_9: -2110890971068702104
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
