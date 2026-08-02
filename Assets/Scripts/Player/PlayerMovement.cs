@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D col;
     InputAction runAction;
     InputAction crouchAction;
+    InputAction jumpAction;
 
     // ── Estado ──────────────────────────────────────────────────────
     bool isGrounded;
@@ -76,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
     bool runHeld;
     bool crouchHeld;
     bool jumpHeld;
+    bool wasJumpHeld;
 
     // ================================================================
     //  UNITY LIFECYCLE
@@ -93,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
         var actions = GetComponent<PlayerInput>().actions;
         runAction = actions["Run"];
         crouchAction = actions["Crouch"];
+        jumpAction = actions["Jump"];
 
         InputSystem.settings.backgroundBehavior =
         InputSettings.BackgroundBehavior.IgnoreFocus;
@@ -101,10 +104,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Se lee el estado actual de la acción en vez de fiarse solo del
-        // callback (OnRun/OnCrouch), ya que el evento de soltar (canceled)
-        // no llega de forma confiable con "Send Messages" para estas acciones.
+        // callback (OnRun/OnCrouch/OnJump), ya que el evento de soltar
+        // (canceled) no llega de forma confiable con "Send Messages" para
+        // estas acciones.
         runHeld = runAction.IsPressed();
         crouchHeld = crouchAction.IsPressed();
+
+        jumpHeld = jumpAction.IsPressed();
+        if (wasJumpHeld && !jumpHeld && rb.linearVelocity.y > 0f)
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
+        wasJumpHeld = jumpHeld;
 
         UpdateTimers();
         HandleJumpInput();
@@ -141,12 +150,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        jumpHeld = value.isPressed;
-
-        if (jumpHeld)
+        if (value.isPressed)
             jumpBufferTimer = jumpBufferTime;
-        else if (rb.linearVelocity.y > 0f)
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
     }
 
     // ================================================================
