@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     CapsuleCollider2D col;
     InputAction runAction;
+    InputAction crouchAction;
 
     // ── Estado ──────────────────────────────────────────────────────
     bool isGrounded;
@@ -89,7 +90,9 @@ public class PlayerMovement : MonoBehaviour
         originalColliderSize = col.size;
         originalColliderOffset = col.offset;
 
-        runAction = GetComponent<PlayerInput>().actions["Run"];
+        var actions = GetComponent<PlayerInput>().actions;
+        runAction = actions["Run"];
+        crouchAction = actions["Crouch"];
 
         InputSystem.settings.backgroundBehavior =
         InputSettings.BackgroundBehavior.IgnoreFocus;
@@ -98,9 +101,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Se lee el estado actual de la acción en vez de fiarse solo del
-        // callback OnRun, ya que el evento de soltar (canceled) no llega
-        // de forma confiable con "Send Messages" para esta acción.
+        // callback (OnRun/OnCrouch), ya que el evento de soltar (canceled)
+        // no llega de forma confiable con "Send Messages" para estas acciones.
         runHeld = runAction.IsPressed();
+        crouchHeld = crouchAction.IsPressed();
 
         UpdateTimers();
         HandleJumpInput();
@@ -143,11 +147,6 @@ public class PlayerMovement : MonoBehaviour
             jumpBufferTimer = jumpBufferTime;
         else if (rb.linearVelocity.y > 0f)
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.45f);
-    }
-
-    void OnCrouch(InputValue value)
-    {
-        crouchHeld = value.isPressed;
     }
 
     // ================================================================
